@@ -3,7 +3,7 @@ class Solution {
         int count=1;
         int last= position[0];
         for(int i=1;i<position.length;i++){
-            if(position[i]-last >= mid){
+            if(position[i] >= mid + last){
                 count++;
                 last =position[i];
             }
